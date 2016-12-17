@@ -1,0 +1,25 @@
+.menu ul {
+    margin: 0;
+    list-style: circle;
+    padding-left: 20px;
+    display: none;
+}
+
+.menu .title {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.menu .title::after {
+    content: ' [+]';
+    font-size: 80%;
+    color: palevioletred;
+}
+
+.menu.open .title::after {
+    content: ' [-]';
+}
+
+.menu.open ul {
+    display: block;
+}
